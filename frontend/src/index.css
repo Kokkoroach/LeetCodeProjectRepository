@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Basic dark-mode overrides for elements that don't use Tailwind dark: */
+.dark body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Ensure main app background (min-h-screen container) goes black in dark mode */
+.dark .min-h-screen {
+  background: #000000 !important;
+}
+
+/* Force common text utility classes to white in dark mode so headers and labels are visible */
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-gray-400 {
+  color: #ffffff !important;
+}
+
+.dark .bg-blue-600 {
+  background-color: #0b1220 !important;
+}
+.dark .bg-white { background-color: #000000 !important; color: #ffffff !important; }
+.dark .border-gray-300 { border-color: #222 !important; }
+.dark .bg-green-100 { background-color: #052e12 !important; }
+.dark .bg-yellow-100 { background-color: #3b2b00 !important; }
+.dark .bg-red-100 { background-color: #3b0f0f !important; }
+.dark .container { color: #ffffff; }

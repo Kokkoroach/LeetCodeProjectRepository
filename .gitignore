@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Build outputs
+frontend/dist/
+backend/google_transit.zip
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+transit_hub.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
